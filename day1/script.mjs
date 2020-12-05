@@ -58,7 +58,7 @@ const fn_p2_better = (input) => {
 var input = fs.readFileSync("./day1/input",'utf8').split('\r\n',).map(x => parseInt(x, 10));
 
 console.time('benchmarkFn1');
-console.log(fn_p1_naive(input));
+console.log(fn_p1_naive(input)); // 802011
 console.timeEnd('benchmarkFn1');
 
 console.time('benchmarkFn2');
@@ -66,7 +66,7 @@ console.log(fn_p1_better(input));
 console.timeEnd('benchmarkFn2');
 
 console.time('benchmarkFn2');
-console.log(fn_p2_naive(input));
+console.log(fn_p2_naive(input)); // 248607374
 console.timeEnd('benchmarkFn2');
 
 console.time('benchmarkFn2');
